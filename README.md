@@ -2,8 +2,6 @@
 
 Projeto acadêmico de processamento e análise de leituras de temperatura de dispositivos IoT, utilizando Python, PostgreSQL, Docker, SQL, Streamlit e Plotly.
 
-> **Nota:** ajuste os dados de identificação acadêmica e os links antes de publicar o repositório.
-
 ## 1. Objetivo
 
 Construir um pipeline de dados capaz de ler um dataset CSV de temperaturas, tratar e validar os registros, armazená-los em PostgreSQL executado em Docker e disponibilizar análises por meio de consultas SQL e um dashboard interativo.
@@ -53,7 +51,7 @@ Após a remoção de uma linha duplicada completa, o pipeline produziu 97.605 re
 ```text
 pipeline-iot-temperaturas/
 ├── data/
-│   └── IOT-temp.csv                 # dataset local; não necessariamente versionado
+│   └── IOT-temp.csv                 # dataset local
 ├── src/
 │   ├── analisar_csv.py              # análise exploratória inicial
 │   ├── pipeline.py                  # tratamento e carga no PostgreSQL
@@ -62,7 +60,6 @@ pipeline-iot-temperaturas/
 │   ├── 01_criar_tabela.sql          # estrutura da tabela
 │   └── 02_criar_views.sql           # três views analíticas
 ├── docker-compose.yml               # serviço PostgreSQL
-├── requirements.txt                 # dependências Python (criar/conferir)
 ├── .env.example                     # exemplo de configuração (recomendado)
 ├── .gitignore                       # arquivos não versionados (recomendado)
 └── README.md
@@ -80,7 +77,7 @@ pipeline-iot-temperaturas/
 ### 7.1 Clonar o projeto
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone (https://github.com/Rafael-OSilva/pipeline-iot-temperaturas)
 cd pipeline-iot-temperaturas
 ```
 
@@ -219,12 +216,9 @@ Durante o desenvolvimento:
 
 ## 13. Autoria
 
-- **Aluno:** [Preencher]
-- **Curso:** [Preencher]
+- **Aluno:** Rafael Oliveira da Silva
+- **Curso:** Analise e desenvolvimento de sistemas
 - **Disciplina:** Disruptive Architectures: IoT, Big Data e IA
-- **Instituição:** [Preencher]
-- **Repositório:** [Adicionar URL após publicação]
+- **Instituição:** Unifecaf
+- **Repositório:** https://github.com/Rafael-OSilva/pipeline-iot-temperaturas
 
-## 14. Licença
-
-Defina uma licença para o código, se necessário, e respeite os termos de uso/licença do dataset original.
